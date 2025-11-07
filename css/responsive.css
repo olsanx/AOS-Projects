@@ -703,6 +703,16 @@
 	header.header-nav.menu_style_home_one .ace-responsive-menu li a{padding: 27px 15px 27px 15px;}
 
 
+	.whatsapp-float {
+		position: fixed;
+		width: 50px;
+		height: 50px;
+		bottom: 60px;
+		right: 15px;
+	}
+
+	
+
 
 	header.header-nav.menu_style_home_three.stricky-fixed{background-color: #4568dc;}
 	header.header-nav.menu_style_home_three .ace-responsive-menu li ul.sub-menu{background-color: #4568dc;}
