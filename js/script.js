@@ -415,47 +415,33 @@
     /*  Popular-Listing-Slider  */
     if($('.popular_listing_slider1').length){
         $('.popular_listing_slider1').owlCarousel({
-            loop:true,
-            margin:0,
-            dots:true,
-            nav:false,
-            rtl:false,
-            autoplayHoverPause:false,
+            loop: false,          // <-- prevents cloning, helps with exact item counts
+            margin: 30,
+            center: false,         // centers items
+            dots: true,
+            nav: false,
             autoplay: false,
-            singleItem: true,
             smartSpeed: 1200,
-            navText: [
-              '<i class="fa fa-arrow-left"></i>',
-              '<i class="fa fa-arrow-right"></i>'
-            ],
             responsive: {
-                0: {
-                    items: 1,
-                    center: false
+                0: { items: 1,
+                    loop: true,
+                    autoplay: true,            
+                    autoplayTimeout: 4000, 
+                    autoplayHoverPause: true
                 },
-                480:{
-                    items:1,
-                    center: false
+                768: { items: 2,
+                    loop: true,
+                    autoplay: true,
+                    autoplayTimeout: 4000,
+                    autoplayHoverPause: true
                 },
-                767: {
-                    items: 1,
-                    center: false
-                },
-                768: {
-                    items: 2
-                },
-                992: {
-                    items: 2
-                },
-                1200: {
-                    items: 3
-                },
-                1280: {
-                    items: 4
+                1200: { items: 4 
                 }
             }
         })
     }
+
+    
 
     /*  Popular-Listing-Slider  */
     if($('.popular_listing_slider_home8').length){
@@ -931,6 +917,77 @@
             }
         })
     }
+
+    var $owl = $('.testimonial_slider_home1');
+
+        if ($owl.length) {
+        // destroy if initialized
+        $owl.trigger('destroy.owl.carousel');
+        $owl.removeClass('owl-loaded owl-hidden'); // cleanup classes
+        $owl.find('.owl-stage-outer').children().unwrap(); // remove stage wrappers (if present)
+
+        // Optional: remove any leftover cloned or empty items
+        $owl.find('.cloned').remove();
+        $owl.find('.item').filter(function(){
+            return $.trim($(this).text()) === '' && $(this).find('img').length === 0;
+        }).remove();
+
+        // re-init with loop:false to avoid clone-related gaps, center true
+        $owl.owlCarousel({
+            loop: false,          // <-- prevents cloning, helps with exact item counts
+            margin: 30,
+            center: false,         // centers items
+            dots: true,
+            nav: false,
+            autoplay: false,
+            smartSpeed: 1200,
+            responsive: {
+            0: { items: 1,
+                 loop: true,
+                 autoplay: true,            
+                 autoplayTimeout: 4000, 
+                 autoplayHoverPause: true
+             },
+            768: { items: 2,
+                   loop: true,
+                   autoplay: true,
+                   autoplayTimeout: 4000,
+                   autoplayHoverPause: true
+             },
+            1200: { items: 3 }
+            }
+            
+        }); 
+    }
+
+
+
+document.addEventListener('DOMContentLoaded', function () {
+  const galleries = document.querySelectorAll('.galleri-container');
+
+  galleries.forEach((gallery, index) => {
+    // Assign unique ID for each gallery
+    const galleryId = 'gallery-' + index;
+
+    gallery.querySelectorAll('a').forEach(a => {
+      a.dataset.galleryId = galleryId;
+    });
+
+    lightGallery(gallery, {
+      selector: 'a[data-gallery-id="' + galleryId + '"]',
+      thumbnail: true,
+      zoom: true,
+      download: false,
+      actualSize: false,
+      loop: true
+    });
+  });
+});
+
+
+
+
+
 
     /*  Testimonial-Slider-Owl-carousel  */
     if($('.testimonial_slider_home1').length){
