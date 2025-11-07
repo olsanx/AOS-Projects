@@ -1252,7 +1252,42 @@ header.header-nav a.navbar_brand {
   width: 3.5rem;
 }
 
+.header.stylehome1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* pushes logo left, menu right */
+  padding: 10px 20px;
+}
 
+.add_listing .fi {
+  margin-right: 6px; /* space between icon and text */
+}
+
+header.header-nav.menu_style_home_one ul.ace-responsive-menu li.add_listing:hover {
+  background: linear-gradient(40deg, #ff0000, #0000ff); /* red to blue */
+  transform: scale(1.02); /* subtle hover effect (optional) */
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+header.header-nav.menu_style_home_one ul.ace-responsive-menu li.add_listing a:hover {
+  color: #ffffff !important;
+}
+
+
+
+.branchoffice {
+  color: white;
+  max-width: 40rem;
+  margin-left: 2rem;
+}
+.social-links i {
+  color: #fff;
+  transition: color 0.3s ease;
+}
+
+.social-links i:hover {
+  color: #f4b400; /* or gold, or your brand color */
+}
 
 .menu_style_home_one.stricky-fixed{
   background-color: #ffffff;
@@ -1319,13 +1354,7 @@ header.header-nav.menu_style_home_one.stricky-fixed .ace-responsive-menu li.add_
 header.header-nav.menu_style_home_one.stricky-fixed .ace-responsive-menu li.add_listing.home2{
   background-color: #6CBF78;
 }
-header.header-nav.menu_style_home_one.stricky-fixed .ace-responsive-menu li.add_listing.home3{
-  background-color: #E44548;
-}
-header.header-nav.menu_style_home_one.stricky-fixed .ace-responsive-menu li.add_listing.home10{
-  background-color: #fff;
-  border: 1px solid #E6E9EC;
-}
+
 header.header-nav.menu_style_home_one.stricky-fixed li.list_s:before{
   background-color: #e8eef2;
   opacity: 1;
@@ -8513,7 +8542,7 @@ form.listing_page_v9{
 }
 
 .futer {
-  width: 3rem;
+  width: 5rem;
 }
 
 /*== 1st Layout Footer ==*/
@@ -9729,6 +9758,15 @@ li.slick-slide.slick-active:nth-child(8) img{
   -o-box-shadow:0px 10px 20px rgba(13, 38, 59, 0.1);
   box-shadow:0px 10px 20px rgba(13, 38, 59, 0.1);
 }
+
+.testimonial_slider_home1 .owl-item.center .item {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+  transition: all 0.4s ease;
+}
+
+
+
 .testimonial_post.home3 .details{
   border: 1px solid #E6E9EC;
   box-shadow: none;
