@@ -993,6 +993,27 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   });
 });
 
+document.addEventListener("DOMContentLoaded", function () {
+  const words = ["Excellence", "Commitment", "Performance"];
+  const changingWord = document.getElementById("changing-word");
+  let index = 0;
+
+  setInterval(() => {
+    changingWord.classList.add("slide-up"); // start animation
+
+    setTimeout(() => {
+      index = (index + 1) % words.length;
+      changingWord.textContent = words[index]; // change the word
+      changingWord.classList.remove("slide-up");
+      changingWord.classList.add("slide-down"); // re-enter animation
+    }, 600); // match transition duration
+
+    setTimeout(() => {
+      changingWord.classList.remove("slide-down"); // reset state
+    }, 1200);
+  }, 3000); // every 3 seconds
+});
+
 
 
     /*  Testimonial-Slider-Owl-carousel  */
