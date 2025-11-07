@@ -6,15 +6,15 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="keywords" content="advanced search, agency, agent, classified, directory, google maps, house, listing, property, real estate, real estate agency, real estate agent, realestate, realtor, rental">
-<meta name="description" content="Houzing - Real Estate HTML Template">
-<meta name="CreativeLayers" content="ATFN">
+<meta name="description" content="AOSprojectmanagementltd">
+<meta name="AOSprojectmanagementltd" content="ATFN">
 <!-- css file -->
 <link rel="stylesheet" href="css/bootstrap.min.css">
 <link rel="stylesheet" href="css/style.css">
 <!-- Responsive stylesheet -->
 <link rel="stylesheet" href="css/responsive.css">
 <!-- Title -->
-<title>Houzing - Real Estate HTML Template</title>
+<title>AOS project management ltd</title>
 <!-- Favicon -->
 <link href="images/favicon.ico" sizes="128x128" rel="shortcut icon" type="image/x-icon" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
@@ -26,6 +26,9 @@
 <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/uicons-bold-rounded/css/uicons-bold-rounded.css">
 <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/3.0.0/uicons-thin-rounded/css/uicons-thin-rounded.css'>
 <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/3.0.0/uicons-thin-straight/css/uicons-thin-straight.css'>
+<link rel='stylesheet' href='https://cdn-uicons.flaticon.com/3.0.0/uicons-brands/css/uicons-brands.css'>
+<link rel='stylesheet' href='https://cdn-uicons.flaticon.com/3.0.0/uicons-solid-rounded/css/uicons-solid-rounded.css'>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/css/lightgallery-bundle.min.css"/>
 
 
 <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -46,14 +49,14 @@
       <nav> 
         <!-- Menu Toggle btn-->
         <div class="menu-toggle">
-        	<img class="nav_logo_img img-fluid" src="image/3logo-white.png" alt="header-logo.svg">
+        	<img class="nav_logo_img img-fluid" src="image/proplogo.png" alt="header-logo.svg">
           <button type="button" id="menu-btn">
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 					</button>
         </div>
-        <a href="index-2.html" class="navbar_brand float-left dn-md">
+        <a href="index.html" class="navbar_brand float-left dn-md">
 					<img class="logo1 img-fluid" src="image/proplogo.png" alt="header-logo.svg">
 					<img class="logo2 img-fluid" src="image/proplogo.png" alt="header-logo2.svg">
 					<span></span>
@@ -76,112 +79,21 @@
           </li>
           
           <li> <a href="page-about.html"><span class="title">About Us</span></a>
-            <ul>
-              <li><a href="page-ui-element.html">UI Elements</a></li>
-            </ul>
           </li>
           <li><a href="page-contact.html">Contact</a></li>
-          <li class="list-inline-item add_listing"><a href="page-dashboard-new-property.html"><span class="icon flaticon-button"></span><span class="dn-lg"> COMPANY PROFILE</span></a></li>
+          <li class="list-inline-item add_listing"><a href="page-dashboard-new-property.html"><span class="fi fi-sr-download"></span><span class="dn-lg"> COMPANY PROFILE</span></a></li>
         </ul>
       </nav>
     </div>
   </header>
   <!-- Modal -->
-  <div class="sign_up_modal modal fade" id="logInModal" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered">
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
-        </div>
-        <div class="modal-body container pb30 pl0 pr0 pt0">
-          <div class="row">
-            <div class="col-lg-12">
-              <ul class="sign_up_tab nav nav-tabs" id="myTab" role="tablist">
-                <li class="nav-item">
-                  <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Sign in</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Register</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="tab-content container" id="myTabContent">
-            <div class="row mt30 tab-pane fade show active pl20 pr20" id="home" role="tabpanel" aria-labelledby="home-tab">
-              <div class="col-lg-12">
-                <div class="login_form">
-                  <form action="#">
-                    <div class="mb-2 mr-sm-2">
-                      <label for="formGroupExampleInput" class="form-label mb0">Login</label>
-                      <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Ali Tufa..">
-                    </div>
-                    <div class="form-group mb5">
-                      <input type="password" class="form-control" placeholder="Password">
-                    </div>
-                    <div class="custom-control custom-checkbox">
-                      <input type="checkbox" class="custom-control-input" id="exampleCheck2">
-                      <label class="custom-control-label" for="exampleCheck2">Remember me</label>
-                      <a class="btn-fpswd float-right text-thm" href="#">Forgot</a>
-                    </div>
-                    <button type="submit" class="btn btn-log btn-block btn-thm mt20">Sign in</button>
-                    <div class="row mt10">
-                      <div class="col-lg-12">
-                        <div class="user_log_info">
-                          <p>Username: <span>agency or agent</span></p>
-                          <p>Password: <span>demo</span></p>
-                        </div>
-                      </div>
-                    </div>
-                  </form>
-                </div>
-              </div>
-            </div>
-            <div class="row mt30 tab-pane fade pl20 pr20" id="profile" role="tabpanel" aria-labelledby="profile-tab">
-              <div class="col-lg-12">
-                <div class="sign_up_form">
-                  <form action="#">
-                    <div class="form-group input-group">
-                      <input type="text" class="form-control" placeholder="Login">
-                    </div>
-                    <div class="form-group input-group">
-                      <input type="text" class="form-control" placeholder="First name">
-                    </div>
-                    <div class="form-group input-group">
-                      <input type="text" class="form-control" placeholder="Last name">
-                    </div>
-                    <div class="form-group input-group">
-                      <select class="selectpicker form-control" data-width="100%">
-                        <option data-tokens="banking">User role</option>
-                        <option data-tokens="digital&creative">User role 2</option>
-                        <option data-tokens="retail">User role 3</option>
-                        <option data-tokens="humanresource">User role 4</option>
-                      </select>
-                    </div>
-                    <div class="form-group input-group">
-                      <input type="email" class="form-control" placeholder="Email">
-                    </div>
-                    <div class="form-group input-group mb20">
-                      <input type="password" class="form-control" placeholder="Password">
-                    </div>
-                    <div class="form-group input-group mb30">
-                      <input type="password" class="form-control" placeholder="Re-enter password">
-                    </div>
-                    <button type="submit" class="btn btn-signup btn-block btn-dark mb0">REGISTER</button>
-                  </form>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+  
   
   <!-- Main Header Nav For Mobile -->
   <div id="page" class="stylehome1 h0">
     <div class="mobile-menu">
       <div class="header stylehome1">
-        <div class="main_logo_home2 text-center"> <img class="nav_logo_img img-fluid mt10" src="image/3logo-white.png" alt="header-logo.svg"></div>
+        <div class="main_logo_home2"> <img class="nav_logo_img img-fluid mt10" src="image/proplogo.png" alt="header-logo.svg"></div>
         <ul class="menu_bar_home2">
           <li class="list-inline-item"><a class="custom_search_with_menu_trigger msearch_icon" href="#"></a></li> 
           <li class="list-inline-item"><a class="menubar" href="#menu"><span></span></a></li>
@@ -207,182 +119,15 @@
   </div>
   
   <!-- Search Field Modal -->
-  <section class="modal fade search_dropdown" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered modal-lg">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h6 class="modal-title">ADVANDEC SEARCH</h6>
-          <a class="closer" data-dismiss="modal" aria-label="Close" href="#"><span aria-hidden="true"><img src="images/icons/close.svg" alt="close.svg"></span></a>
-        </div>
-        <div class="modal-body">
-          <div class="popup_modal_wrapper">
-            <div class="container">
-              <div class="row">
-                <div class="col-lg-6">
-                  <div class="adv_src_pmodal">
-                    <h6 class="title">Bathrooms</h6>
-                    <div class="ui_kit_select_box">
-                      <select class="selectpicker custom-select-lg mb20">
-                        <option value="">Select Bathrooms</option>
-                        <option value="One">1</option>
-                        <option value="Two">2</option>
-                        <option value="Three">3</option>
-                        <option value="Four">4</option>
-                        <option value="Five">5</option>
-                      </select>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-lg-6">
-                  <div class="adv_src_pmodal">
-                    <h6 class="title">Beds</h6>
-                    <div class="ui_kit_select_box">
-                      <select class="selectpicker custom-select-lg mb20">
-                        <option value="">Select Beds</option>
-                        <option value="One">1</option>
-                        <option value="Two">2</option>
-                        <option value="Three">3</option>
-                        <option value="Four">4</option>
-                        <option value="Five">5</option>
-                      </select>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-lg-6 mb30-md">
-                  <div class="adv_src_pmodal">
-                    <h6 class="title">Area (sq ft)</h6>
-                    <div class="form-group">
-                      <input type="text" class="form-control area_input float-left" placeholder="Min. Area">
-                    </div>
-                    <div class="form-group">
-                      <input type="text" class="form-control area_input float-right" placeholder="Max. Area">
-                    </div>
-                  </div>
-                </div>
-                <div class="col-lg-6">
-                  <div class="adv_src_pmodal">
-                    <h6 class="title">STATUS</h6>
-                    <div class="ui_kit_select_box">
-                      <select class="selectpicker custom-select-lg mb20">
-                        <option value="">Select Status</option>
-                        <option value="Active">Active</option>
-                        <option value="Deactive">Deactive</option>
-                        <option value="Pending">Pending</option>
-                        <option value="Others">Others</option>
-                      </select>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-lg-6 mb30-md">
-                  <div class="adv_src_pmodal">
-                    <h6 class="title">Price</h6>
-                    <div class="mt20" id="slider"></div>
-                    <span id="slider-range-value1"></span>
-                    <span id="slider-range-value2"></span>
-                  </div>
-                </div>
-                <div class="col-lg-6">
-                  <div class="adv_src_pmodal">
-                    <h6 class="title">PROPERTY ID</h6>
-                    <input type="text" class="form-control property_id_input" placeholder="HZZS 03492">
-                  </div>
-                </div>
-              </div>
-              <div class="row mt30">
-                <div class="col-lg-12">
-                  <div class="adv_src_pmodal">
-                    <h6><span class="title">Amenities</span> <a class="tdu text-thm fz13 ml10" href="#">Select / Deselect All</a></h6>
-                  </div>
-                </div>
-                <div class="col-sm-6 col-lg-4">
-                  <div class="adv_src_pmodal mb20">
-                    <div class="ui_kit_checkbox">
-                      <div class="custom-control custom-checkbox">
-                        <input type="checkbox" class="custom-control-input" id="customCheckM1">
-                        <label class="custom-control-label" for="customCheckM1">Air Conditioning</label>
-                      </div>
-                      <div class="custom-control custom-checkbox">
-                        <input type="checkbox" class="custom-control-input" id="customCheckM2">
-                        <label class="custom-control-label" for="customCheckM2">Barbeque</label>
-                      </div>
-                      <div class="custom-control custom-checkbox">
-                        <input type="checkbox" class="custom-control-input" id="customCheckM3">
-                        <label class="custom-control-label" for="customCheckM3">Dryer</label>
-                      </div>
-                      <div class="custom-control custom-checkbox">
-                        <input type="checkbox" class="custom-control-input" id="customCheckM4">
-                        <label class="custom-control-label" for="customCheckM4">Gym</label>
-                      </div>
-                      <div class="custom-control custom-checkbox">
-                        <input type="checkbox" class="custom-control-input" id="customCheckM5">
-                        <label class="custom-control-label" for="customCheckM5">Laundry</label>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-sm-6 col-lg-4">
-                  <div class="adv_src_pmodal mb20">
-                    <div class="ui_kit_checkbox">
-                      <div class="custom-control custom-checkbox">
-                        <input type="checkbox" class="custom-control-input" id="customCheckM6">
-                        <label class="custom-control-label" for="customCheckM6">Lawn</label>
-                      </div>
-                      <div class="custom-control custom-checkbox">
-                        <input type="checkbox" class="custom-control-input" id="customCheckM7">
-                        <label class="custom-control-label" for="customCheckM7">Microwave</label>
-                      </div>
-                      <div class="custom-control custom-checkbox">
-                        <input type="checkbox" class="custom-control-input" id="customCheckM8">
-                        <label class="custom-control-label" for="customCheckM8">Outdoor Shower</label>
-                      </div>
-                      <div class="custom-control custom-checkbox">
-                        <input type="checkbox" class="custom-control-input" id="customCheckM9">
-                        <label class="custom-control-label" for="customCheckM9">Refrigerator</label>
-                      </div>
-                      <div class="custom-control custom-checkbox">
-                        <input type="checkbox" class="custom-control-input" id="customCheckM10">
-                        <label class="custom-control-label" for="customCheckM10">Stunning views</label>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-sm-6 col-lg-4">
-                  <div class="adv_src_pmodal mb20">
-                    <div class="ui_kit_checkbox">
-                      <div class="custom-control custom-checkbox">
-                        <input type="checkbox" class="custom-control-input" id="customCheckM11">
-                        <label class="custom-control-label" for="customCheckM11">Waterfront</label>
-                      </div>
-                      <div class="custom-control custom-checkbox">
-                        <input type="checkbox" class="custom-control-input" id="customCheckM12">
-                        <label class="custom-control-label" for="customCheckM12">Parking</label>
-                      </div>
-                      <div class="custom-control custom-checkbox">
-                        <input type="checkbox" class="custom-control-input" id="customCheckM13">
-                        <label class="custom-control-label" for="customCheckM13">Doorman</label>
-                      </div>
-                      <div class="custom-control custom-checkbox">
-                        <input type="checkbox" class="custom-control-input" id="customCheckM14">
-                        <label class="custom-control-label" for="customCheckM14">Central Heating</label>
-                      </div>
-                      <div class="custom-control custom-checkbox">
-                        <input type="checkbox" class="custom-control-input" id="customCheckM15">
-                        <label class="custom-control-label" for="customCheckM15">Cleaning Service</label>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-lg-12">
-                  <div class="adv_src_pmodal">
-                    <button class="btn btn-block btn-thm"><span class="fa fa-search mr15"></span>Show 300+ PROPERTY</button>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+  <section class="modal fade search_dropdown" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-hidden="true"> 
+      <div class="col-lg-6 mb30-md">
+        <div class="adv_src_pmodal">
+          <h6 class="title">Price</h6>
+          <div class="mt20" id="slider"></div>
+          <span id="slider-range-value1"></span>
+          <span id="slider-range-value2"></span>
         </div>
       </div>
-    </div>
   </section>
   
   <!-- Home Design -->
@@ -398,7 +143,7 @@
             </div>
             <div class="btn-row">
               <a class="btn btn-prm" href="#">VIEW OUR PROJECTS</a>
-              <a class="btn btn-outline" href="#">LEARN MORE ABOUT US</a>
+              <a class="btn btn-outline" href="page-about.html">LEARN MORE ABOUT US</a>
             </div>  
           </div>
         </div>
@@ -420,11 +165,26 @@
       <div class="row">
         <div class="col-lg-12">
           <div class="popular_listing_slider1">
-            <div class="item">
+          <div class="item">
               <div class="feat_property">
-                <div class="thumb"> <img class="img-whp" src="image/agodi-3.jpg" alt="fl1.jpg">
+                <div class="thumb gallery-container">
+                  <div class="galleri-container">
+                    <a href="image/agodi-3.jpg" 
+                      data-sub-html="<h4>Country Home Development</h4>
+                      <p>Agodi GRA, Ibadan, Oyo state</p>
+                      <em>A modern country home in Agodi G.R.A, defined by elegance and serene living</em>">
+                      <img class="img-whp" src="image/agodi-3.jpg" alt="Country Home Development">
+                    </a>
+
+                    <!-- Hidden gallery images -->
+                    <a href="image/agodi-1.jpg" data-sub-html="<p>Agodi GRA, Ibadan</p>" style="display:none;"></a>
+                    <a href="image/agodi-2.jpg" data-sub-html="<p>Agodi GRA, Ibadan</p>" style="display:none;"></a>
+                    <a href="image/agodi-4.jpg" data-sub-html="<p>Agodi GRA, Ibadan</p>" style="display:none;"></a>
+                    <a href="image/agodi-5.jpg" data-sub-html="<p>Agodi GRA, Ibadan</p>" style="display:none;"></a>
+                    <a href="image/agodi-6.jpg" data-sub-html="<p>Agodi GRA, Ibadan</p>" style="display:none;"></a>
+                  </div>
                   <div class="thmb_cntnt">
-                     <ul class="tag mb0">
+                    <ul class="tag mb0">
                       <li class="list-inline-item"><a href="#">completion</a></li>
                     </ul>
                     <ul class="tag2 mb0">
@@ -433,20 +193,24 @@
                   </div>
                   <div class="thmb_cntnt2">
                     <ul class="listing_gallery mb0">
-                      <li class="list-inline-item"><a class="text-white" href="#"><span class="flaticon-photo-camera mr5"></span> 6</a></li>
+                      <li class="list-inline-item">
+                        <a class="text-white" href="#"><span class="flaticon-photo-camera mr5"></span> 6</a>
+                      </li>
                     </ul>
                   </div>
                 </div>
                 <div class="details">
                   <div class="tc_content">
-                    <div class="badge_icon"><a href="#"><img src="image/AOS Company Profile 2025.jpg" alt="AOS logo"></a></div>
+                    <div class="badge_icon">
+                      <a href="#"><img src="image/AOS Company Profile 2025.jpg" alt="AOS logo"></a>
+                    </div>
                     <h4><a href="page-listing-single-v8.html">Country Home Development</a></h4>
                     <p>Agodi GRA, Ibadan, Oyo state</p>
                     <ul class="prop_details mb0">
-                      <li class="list-inline-item"><a href="#"><span class="fi fi-tr-blueprint-house"></span> <br>Design</a></li>
-                      <li class="list-inline-item"><a href="#"><span class="fi fi-ts-building"></span> <br>Structure</a></li>
-                      <li class="list-inline-item"><a href="#"><span class="fi fi-ts-urban-planning"></span> <br>Interior</a></li>
-                      <li class="list-inline-item"><a href="#"><span class="fi fi-tr-calendar"></span> <br>100%</a></li>
+                      <li class="list-inline-item"><a href="#"><span class="fi fi-tr-blueprint-house"></span><br>Design</a></li>
+                      <li class="list-inline-item"><a href="#"><span class="fi fi-ts-building"></span><br>Structure</a></li>
+                      <li class="list-inline-item"><a href="#"><span class="fi fi-ts-urban-planning"></span><br>Interior</a></li>
+                      <li class="list-inline-item"><a href="#"><span class="fi fi-tr-calendar"></span><br>100%</a></li>
                     </ul>
                   </div>
                   <div class="fp_footer">
@@ -455,9 +219,28 @@
                 </div>
               </div>
             </div>
+
+
+
+            <!-- Diamond Estate -->
             <div class="item">
               <div class="feat_property">
-                <div class="thumb"> <img class="img-whp" src="image/diamond-1.jpg" alt="fl2.jpg">
+                <div class="thumb gallery-container">
+                  <div class="galleri-container">
+                    <!-- Main visible image -->
+                    <a href="image/diamond-1.jpg" 
+                      data-sub-html="<h4>5-Bedroom Semi-Detached Residence</h4><p>Diamond Estate, Lekki, Lagos state</p><em>A contemporary 5-bedroom home in Diamond Estate, blending functionality with elegant architecture.</em>">
+                      <img class="img-whp" src="image/diamond-1.jpg" alt="Diamond Estate">
+                    </a>
+
+                    <!-- Hidden gallery images -->
+                    <a href="image/diamond-2.jpg" data-sub-html="<p>Diamond Estate, Lekki</p>" style="display:none;"></a>
+                    <a href="image/diamond-3.jpg" data-sub-html="<p>Diamond Estate, Lekki</p>" style="display:none;"></a>
+                    <a href="image/diamond-4.jpg" data-sub-html="<p>Diamond Estate, Lekki</p>" style="display:none;"></a>
+                    <a href="image/diamond-5.jpg" data-sub-html="<p>Diamond Estate, Lekki</p>" style="display:none;"></a>
+                    <a href="image/diamond-6.jpg" data-sub-html="<p>Diamond Estate, Lekki</p>" style="display:none;"></a>
+                  </div>
+
                   <div class="thmb_cntnt">
                     <ul class="tag mb0">
                       <li class="list-inline-item"><a href="#">completion</a></li>
@@ -466,33 +249,52 @@
                       <li class="list-inline-item"><a href="#">100%</a></li>
                     </ul>
                   </div>
+
                   <div class="thmb_cntnt2">
                     <ul class="listing_gallery mb0">
-                      <li class="list-inline-item"><a class="text-white" href="#"><span class="flaticon-photo-camera mr5"></span> 6</a></li>
+                      <li class="list-inline-item">
+                        <a class="text-white" href="#"><span class="flaticon-photo-camera mr5"></span> 6</a>
+                      </li>
                     </ul>
                   </div>
                 </div>
+
                 <div class="details">
                   <div class="tc_content">
                     <div class="badge_icon"><a href="#"><img src="image/AOS Company Profile 2025.jpg" alt="AOS logo"></a></div>
                     <h4><a href="page-listing-single-v8.html">5-Bedroom Semi-Detached Residence</a></h4>
                     <p>Diamond Estate, Lekki, Lagos state</p>
                     <ul class="prop_details mb0">
-                      <li class="list-inline-item"><a href="#"><span class="fi fi-tr-blueprint-house"></span> <br>Design</a></li>
-                      <li class="list-inline-item"><a href="#"><span class="fi fi-ts-building"></span> <br>Structure</a></li>
-                      <li class="list-inline-item"><a href="#"><span class="fi fi-ts-urban-planning"></span> <br>Interior</a></li>
-                      <li class="list-inline-item"><a href="#"><span class="fi fi-tr-calendar"></span> <br>100%</a></li>
+                      <li class="list-inline-item"><a href="#"><span class="fi fi-tr-blueprint-house"></span><br>Design</a></li>
+                      <li class="list-inline-item"><a href="#"><span class="fi fi-ts-building"></span><br>Structure</a></li>
+                      <li class="list-inline-item"><a href="#"><span class="fi fi-ts-urban-planning"></span><br>Interior</a></li>
+                      <li class="list-inline-item"><a href="#"><span class="fi fi-tr-calendar"></span><br>100%</a></li>
                     </ul>
                   </div>
                   <div class="fp_footer">
-                    <em><b>A contemporary 5-bedroom home in Diamond Estate, blending functionality with elegant architecture.</b></em> 
+                    <em><b>A contemporary 5-bedroom home in Diamond Estate, blending functionality with elegant architecture.</b></em>
                   </div>
                 </div>
               </div>
             </div>
+
+            <!-- Ilorin Mall -->
             <div class="item">
               <div class="feat_property">
-                <div class="thumb"> <img class="img-whp" src="image/ilorin-mall1.jpg" alt="fl2.jpg">
+                <div class="thumb gallery-container">
+                  <div class="galleri-container">
+                    <!-- Main visible image -->
+                    <a href="image/ilorin-mall1.jpg" 
+                      data-sub-html="<h4>Multi-Use Shopping Mall and Office Complex</h4><p>Ilorin, Kwara state</p><em>A multi-purpose complex integrating shopping, dining, and office facilities in one dynamic space.</em>">
+                      <img class="img-whp" src="image/ilorin-mall1.jpg" alt="Ilorin Mall">
+                    </a>
+
+                    <!-- Hidden gallery images -->
+                    <a href="image/ilorin-mall2.jpg" data-sub-html="<p>Ilorin, Kwara state</p>" style="display:none;"></a>
+                    <a href="image/ilorin-mall3.jpg" data-sub-html="<p>Ilorin, Kwara state</p>" style="display:none;"></a>
+                    <a href="image/ilorin-mall4.jpg" data-sub-html="<p>Ilorin, Kwara state</p>" style="display:none;"></a>
+                  </div>
+
                   <div class="thmb_cntnt">
                     <ul class="tag mb0">
                       <li class="list-inline-item"><a href="#">completion</a></li>
@@ -501,33 +303,50 @@
                       <li class="list-inline-item"><a href="#">100%</a></li>
                     </ul>
                   </div>
+
                   <div class="thmb_cntnt2">
                     <ul class="listing_gallery mb0">
-                      <li class="list-inline-item"><a class="text-white" href="#"><span class="flaticon-photo-camera mr5"></span> 4</a></li>
+                      <li class="list-inline-item">
+                        <a class="text-white" href="#"><span class="flaticon-photo-camera mr5"></span> 4</a>
+                      </li>
                     </ul>
                   </div>
                 </div>
+
                 <div class="details">
                   <div class="tc_content">
                     <div class="badge_icon"><a href="#"><img src="image/AOS Company Profile 2025.jpg" alt="AOS logo"></a></div>
                     <h4><a href="page-listing-single-v8.html">Multi-Use Shopping Mall and Office Complex</a></h4>
                     <p>Ilorin, Kwara state</p>
                     <ul class="prop_details mb0">
-                      <li class="list-inline-item"><a href="#"><span class="fi fi-tr-blueprint-house"></span> <br>Design</a></li>
-                      <li class="list-inline-item"><a href="#"><span class="fi fi-ts-building"></span> <br>Structure</a></li>
-                      <li class="list-inline-item"><a href="#"><span class="fi fi-ts-urban-planning"></span> <br>Interior</a></li>
-                      <li class="list-inline-item"><a href="#"><span class="fi fi-tr-calendar"></span> <br>100%</a></li>
+                      <li class="list-inline-item"><a href="#"><span class="fi fi-tr-blueprint-house"></span><br>Design</a></li>
+                      <li class="list-inline-item"><a href="#"><span class="fi fi-ts-building"></span><br>Structure</a></li>
+                      <li class="list-inline-item"><a href="#"><span class="fi fi-ts-urban-planning"></span><br>Interior</a></li>
+                      <li class="list-inline-item"><a href="#"><span class="fi fi-tr-calendar"></span><br>100%</a></li>
                     </ul>
                   </div>
                   <div class="fp_footer">
-                    <em><b>A multi-purpose complex integrating shopping, dining, and office facilities in one dynamic space.</b></em> 
+                    <em><b>A multi-purpose complex integrating shopping, dining, and office facilities in one dynamic space.</b></em>
                   </div>
                 </div>
               </div>
             </div>
+
             <div class="item">
               <div class="feat_property">
-                <div class="thumb"> <img class="img-whp" src="image/park-1.jpg" alt="fl2.jpg">
+                <div class="thumb gallery-container">
+                  <div class="galleri-container">
+                    <a href="image/park-1.jpg" 
+                      data-sub-html="<h4>12 Blocks of 5-Bedroom Semi-Detached Residences</h4><p>Park Royale, Lekki, Lagos state</p><em>A premium residential development featuring 12 blocks of spacious 5-bedroom semi-detached homes in Lekki.</em>">
+                      <img class="img-whp" src="image/park-1.jpg" alt="Park Royale Residences">
+                    </a>
+
+                    <!-- Hidden gallery images -->
+                    <a href="image/park-2.jpg" data-sub-html="<p>Park Royale, Lekki</p>" style="display:none;"></a>
+                    <a href="image/park-3.jpg" data-sub-html="<p>Park Royale, Lekki</p>" style="display:none;"></a>
+                    <a href="image/park-5.jpg" data-sub-html="<p>Park Royale, Lekki</p>" style="display:none;"></a>
+                  </div>
+
                   <div class="thmb_cntnt">
                     <ul class="tag mb0">
                       <li class="list-inline-item"><a href="#">completion</a></li>
@@ -536,30 +355,40 @@
                       <li class="list-inline-item"><a href="#">100%</a></li>
                     </ul>
                   </div>
+
                   <div class="thmb_cntnt2">
                     <ul class="listing_gallery mb0">
-                      <li class="list-inline-item"><a class="text-white" href="#"><span class="flaticon-photo-camera mr5"></span> 4</a></li>
+                      <li class="list-inline-item">
+                        <a class="text-white" href="#"><span class="flaticon-photo-camera mr5"></span> 4</a>
+                      </li>
                     </ul>
                   </div>
                 </div>
+
                 <div class="details">
                   <div class="tc_content">
-                    <div class="badge_icon"><a href="#"><img src="image/AOS Company Profile 2025.jpg" alt="AOS logo"></a></div>
+                    <div class="badge_icon">
+                      <a href="#"><img src="image/AOS Company Profile 2025.jpg" alt="AOS logo"></a>
+                    </div>
                     <h4><a href="page-listing-single-v8.html">12 Blocks of 5-Bedroom Semi-Detached Residences</a></h4>
                     <p>Park Royale, Lekki, Lagos state</p>
                     <ul class="prop_details mb0">
-                      <li class="list-inline-item"><a href="#"><span class="fi fi-tr-blueprint-house"></span> <br>Design</a></li>
-                      <li class="list-inline-item"><a href="#"><span class="fi fi-ts-building"></span> <br>Structure</a></li>
-                      <li class="list-inline-item"><a href="#"><span class="fi fi-ts-urban-planning"></span> <br>Interior</a></li>
-                      <li class="list-inline-item"><a href="#"><span class="fi fi-tr-calendar"></span> <br>100%</a></li>
+                      <li class="list-inline-item"><a href="#"><span class="fi fi-tr-blueprint-house"></span><br>Design</a></li>
+                      <li class="list-inline-item"><a href="#"><span class="fi fi-ts-building"></span><br>Structure</a></li>
+                      <li class="list-inline-item"><a href="#"><span class="fi fi-ts-urban-planning"></span><br>Interior</a></li>
+                      <li class="list-inline-item"><a href="#"><span class="fi fi-tr-calendar"></span><br>100%</a></li>
                     </ul>
                   </div>
+
                   <div class="fp_footer">
-                    <em><b>A premium residential development featuring 12 blocks of spacious 5-bedroom semi-detached homes in Lekki.</b></em> 
+                    <em><b>A premium residential development featuring 12 blocks of spacious 5-bedroom semi-detached homes in Lekki.</b></em>
                   </div>
                 </div>
               </div>
             </div>
+
+
+            
           </div>
         </div>
       </div>
@@ -707,7 +536,7 @@
                      <li class="list-inline-item"><a href="#"><span class="fi fi-tr-blueprint-house"></span> <br>Planning</a></li>
                       <li class="list-inline-item"><a href="#"><span class="fi fi-ts-building"></span> <br>Building</a></li>
                       <li class="list-inline-item"><a href="#"><span class="fi fi-ts-urban-planning"></span> <br>Works</a></li>
-                      <li class="list-inline-item"><a href="#"><span class="fi fi-tr-calendar"></span> <br>ongoing</a></li>
+                      <li class="list-inline-item"><a href="#"><span class="fi fi-tr-calendar"></span> <br>Proposed</a></li>
                     </ul>
                   </div>
                   <div class="fp_footer">
@@ -748,107 +577,34 @@
                 </div>
               </div>
             </div>
-            <div class="item">
+                 <div class="item">
               <div class="feat_property">
-                <div class="thumb"> <img class="img-whp" src="image/park-1.jpg" alt="fl2.jpg">
+                <div class="thumb"> <img class="img-whp" src="image/apapa1.jpg" alt="fl2.jpg">
                   <div class="thmb_cntnt">
                     <ul class="tag mb0">
-                      <li class="list-inline-item"><a href="#">completion</a></li>
-                    </ul>
-                    <ul class="tag2 mb0">
-                      <li class="list-inline-item"><a href="#">100%</a></li>
+                      <li class="list-inline-item"><a href="#">Proposed</a></li>
                     </ul>
                   </div>
                   <div class="thmb_cntnt2">
                     <ul class="listing_gallery mb0">
-                      <li class="list-inline-item"><a class="text-white" href="#"><span class="flaticon-photo-camera mr5"></span> 4</a></li>
+                      <li class="list-inline-item"><a class="text-white" href="#"><span class="flaticon-photo-camera mr5"></span> 7</a></li>
                     </ul>
                   </div>
                 </div>
                 <div class="details">
                   <div class="tc_content">
                     <div class="badge_icon"><a href="#"><img src="image/AOS Company Profile 2025.jpg" alt="AOS logo"></a></div>
-                    <h4><a href="page-listing-single-v8.html">12 Blocks of 5-Bedroom Semi-Detached Residences</a></h4>
-                    <p>Park Royale, Lekki, Lagos state</p>
+                    <h4><a href="page-listing-single-v8.html">Proposed Residential Development, Child Avenue</a></h4>
+                    <p>34 Child Avenue, Apapa, Lagos</p>
                     <ul class="prop_details mb0">
-                      <li class="list-inline-item"><a href="#"><span class="fi fi-tr-blueprint-house"></span> <br>Design</a></li>
-                      <li class="list-inline-item"><a href="#"><span class="fi fi-ts-building"></span> <br>Structure</a></li>
-                      <li class="list-inline-item"><a href="#"><span class="fi fi-ts-urban-planning"></span> <br>Interior</a></li>
-                      <li class="list-inline-item"><a href="#"><span class="fi fi-tr-calendar"></span> <br>100%</a></li>
+                     <li class="list-inline-item"><a href="#"><span class="fi fi-tr-blueprint-house"></span> <br>Planning</a></li>
+                      <li class="list-inline-item"><a href="#"><span class="fi fi-ts-building"></span> <br>Building</a></li>
+                      <li class="list-inline-item"><a href="#"><span class="fi fi-ts-urban-planning"></span> <br>Works</a></li>
+                      <li class="list-inline-item"><a href="#"><span class="fi fi-tr-calendar"></span> <br>Proposed</a></li>
                     </ul>
                   </div>
                   <div class="fp_footer">
-                    <em><b>A premium residential development featuring 12 blocks of spacious 5-bedroom semi-detached homes in Lekki.</b></em> 
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="item">
-              <div class="feat_property">
-                <div class="thumb"> <img class="img-whp" src="image/park-1.jpg" alt="fl2.jpg">
-                  <div class="thmb_cntnt">
-                    <ul class="tag mb0">
-                      <li class="list-inline-item"><a href="#">completion</a></li>
-                    </ul>
-                    <ul class="tag2 mb0">
-                      <li class="list-inline-item"><a href="#">100%</a></li>
-                    </ul>
-                  </div>
-                  <div class="thmb_cntnt2">
-                    <ul class="listing_gallery mb0">
-                      <li class="list-inline-item"><a class="text-white" href="#"><span class="flaticon-photo-camera mr5"></span> 4</a></li>
-                    </ul>
-                  </div>
-                </div>
-                <div class="details">
-                  <div class="tc_content">
-                    <div class="badge_icon"><a href="#"><img src="image/AOS Company Profile 2025.jpg" alt="AOS logo"></a></div>
-                    <h4><a href="page-listing-single-v8.html">12 Blocks of 5-Bedroom Semi-Detached Residences</a></h4>
-                    <p>Park Royale, Lekki, Lagos state</p>
-                    <ul class="prop_details mb0">
-                      <li class="list-inline-item"><a href="#"><span class="fi fi-tr-blueprint-house"></span> <br>Design</a></li>
-                      <li class="list-inline-item"><a href="#"><span class="fi fi-ts-building"></span> <br>Structure</a></li>
-                      <li class="list-inline-item"><a href="#"><span class="fi fi-ts-urban-planning"></span> <br>Interior</a></li>
-                      <li class="list-inline-item"><a href="#"><span class="fi fi-tr-calendar"></span> <br>100%</a></li>
-                    </ul>
-                  </div>
-                  <div class="fp_footer">
-                    <em><b>A premium residential development featuring 12 blocks of spacious 5-bedroom semi-detached homes in Lekki.</b></em> 
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="item">
-              <div class="feat_property">
-                <div class="thumb"> <img class="img-whp" src="image/park-1.jpg" alt="fl2.jpg">
-                  <div class="thmb_cntnt">
-                    <ul class="tag mb0">
-                      <li class="list-inline-item"><a href="#">completion</a></li>
-                    </ul>
-                    <ul class="tag2 mb0">
-                      <li class="list-inline-item"><a href="#">100%</a></li>
-                    </ul>
-                  </div>
-                  <div class="thmb_cntnt2">
-                    <ul class="listing_gallery mb0">
-                      <li class="list-inline-item"><a class="text-white" href="#"><span class="flaticon-photo-camera mr5"></span> 4</a></li>
-                    </ul>
-                  </div>
-                </div>
-                <div class="details">
-                  <div class="tc_content">
-                    <div class="badge_icon"><a href="#"><img src="image/AOS Company Profile 2025.jpg" alt="AOS logo"></a></div>
-                    <h4><a href="page-listing-single-v8.html">12 Blocks of 5-Bedroom Semi-Detached Residences</a></h4>
-                    <p>Park Royale, Lekki, Lagos state</p>
-                    <ul class="prop_details mb0">
-                      <li class="list-inline-item"><a href="#"><span class="fi fi-tr-blueprint-house"></span> <br>Design</a></li>
-                      <li class="list-inline-item"><a href="#"><span class="fi fi-ts-building"></span> <br>Structure</a></li>
-                      <li class="list-inline-item"><a href="#"><span class="fi fi-ts-urban-planning"></span> <br>Interior</a></li>
-                      <li class="list-inline-item"><a href="#"><span class="fi fi-tr-calendar"></span> <br>100%</a></li>
-                    </ul>
-                  </div>
-                  <div class="fp_footer">
-                    <em><b>A premium residential development featuring 12 blocks of spacious 5-bedroom semi-detached homes in Lekki.</b></em> 
+                    <em><b>Proposed residential development at 34 Child Avenue, Apapa, designed to deliver modern living spaces with efficient layouts and refined finishes.</b></em> 
                   </div>
                 </div>
               </div>
@@ -867,7 +623,7 @@
         <div class="col-lg-6 offset-lg-3">
           <div class="main-title text-center">
             <h2>Our Testimonials</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+            <p>What our clients and partners say about working with us.</p>
           </div>
         </div>
       </div>
@@ -910,108 +666,13 @@
                 </div>
               </div>
             </div>
-            <div class="item">
-              <div class="testimonial_post home1 text-center">
-                <div class="details">
-                  <p>“ I believe in lifelong learning and Skola is a great place to learn from experts. I've learned a lot and recommend it to all my friends “</p>
-                </div>
-                <div class="thumb"> <img src="images/testimonial/4.png" alt="4.png"> </div>
-                <div class="client_details">
-                  <h4 class="title">Guy Hawkins</h4>
-                  <div class="client-postn">Developer</div>
-                </div>
-              </div>
-            </div>
-            <div class="item">
-              <div class="testimonial_post home1 text-center">
-                <div class="details">
-                  <p>“ I believe in lifelong learning and Skola is a great place to learn from experts. I've learned a lot and recommend it to all my friends “</p>
-                </div>
-                <div class="thumb"> <img src="images/testimonial/1.png" alt="1.png"> </div>
-                <div class="client_details">
-                  <h4 class="title">Marvin McKinney</h4>
-                  <div class="client-postn">Designer</div>
-                </div>
-              </div>
-            </div>
+
           </div>
         </div>
       </div>
     </div>
   </section>
   
-  <!-- Property Cities -->
-  <section id="property-city" class="property-city pb70 bb1">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-6 offset-lg-3">
-          <div class="main-title text-center">
-            <h2>Explore Cities</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-sm-6 col-md-6 col-lg-3 col-xl-2">
-          <div class="explore_city custom_class_from_520 fl-520">
-            <div class="thumb"><img class="img-fluid" src="images/cities/1.jpg" alt="1.jpg"></div>
-            <div class="details">
-              <h4 class="title"><a href="page-listing-single-v3.html">Los Angeles</a></h4>
-              <p>15 Properties</p>
-            </div>
-          </div>
-          <div class="explore_city custom_class_from_520 fr-520">
-            <div class="thumb"><img class="img-fluid" src="images/cities/2.jpg" alt="2.jpg"></div>
-            <div class="details">
-              <h4 class="title"><a href="page-listing-single-v3.html">London</a></h4>
-              <p>23 Properties</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-6 col-md-6 col-lg-3 col-xl-2">
-          <div class="explore_city custom_class_from_520 fl-520">
-            <div class="thumb"><img class="img-fluid" src="images/cities/3.jpg" alt="3.jpg"></div>
-            <div class="details">
-              <h4 class="title"><a href="page-listing-single-v3.html">New York</a></h4>
-              <p>7543 Properties</p>
-            </div>
-          </div>
-          <div class="explore_city custom_class_from_520 fr-520">
-            <div class="thumb"><img class="img-fluid" src="images/cities/4.jpg" alt="4.jpg"></div>
-            <div class="details">
-              <h4 class="title"><a href="page-listing-single-v3.html">Paris</a></h4>
-              <p>821 Properties</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-3 col-xl-6">
-          <div class="explore_city style2">
-            <div class="thumb"><img class="img-fluid" src="images/cities/5.jpg" alt="5.jpg"></div>
-            <div class="details">
-              <h4 class="title"><a href="page-listing-single-v3.html">Florida</a></h4>
-              <p>411 Properties</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-3 col-xl-2">
-          <div class="explore_city custom_class_from_767 fl-767">
-            <div class="thumb"><img class="img-fluid" src="images/cities/6.jpg" alt="6.jpg"></div>
-            <div class="details">
-              <h4 class="title"><a href="page-listing-single-v3.html">Miami</a></h4>
-              <p>42 Properties</p>
-            </div>
-          </div>
-          <div class="explore_city custom_class_from_767 fr-767">
-            <div class="thumb"><img class="img-fluid" src="images/cities/7.jpg" alt="7.jpg"></div>
-            <div class="details">
-              <h4 class="title"><a href="page-listing-single-v3.html">Istanbul</a></h4>
-              <p>392 Properties</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
   
   <!-- Our Team -->
   <section class="our-team pb40">
@@ -1029,7 +690,7 @@
           <div class="team_slider_home1">
             <div class="item">
               <div class="team_member">
-                <div class="thumb"> <img class="img-fluid" src="images/team/1.jpg" alt="1.jpg">
+                <div class="thumb"> <img class="img-fluid" src="image/agodi-3.jpg" alt="1.jpg">
                   <div class="overylay">
                     <ul class="social_icon">
                       <li class="list-inline-item"><a href="#"><i class="fa fa-facebook"></i></a></li>
@@ -1131,10 +792,10 @@
       <div class="row justify-content-center">
         <div class="col-lg-8">
           <div class="start_partner text-center">
-            <h2>Become a Real Estate Agent</h2>
-            <p>We only work with the best companies around the globe.</p>
+            <h2>Let’s discuss how we can make your next project a success.</h2>
+            <p>We’re just a message away from turning your vision into reality.</p>
           </div>
-          <div class="parner_reg_btn text-center mt25"> <a class="btn" href="page-login.html">REGISTER NOW</a> </div>
+          <div class="parner_reg_btn text-center mt25"> <a class="btn" href="">GET IN TOUCH</a> </div>
         </div>
       </div>
     </div>
@@ -1144,73 +805,47 @@
   <section class="footer_one home1">
     <div class="container pb90">
       <div class="row">
-        <div class="col-sm-5 col-md-5 col-lg-3 col-xl-2">
+        <div class="col-sm-5 col-md-5 col-lg-6 col-xl-4">
           <div class="footer_contact_widget">
             <h4>Contact Us</h4>
             <ul class="list-unstyled">
-              <li class="text-white df"><span class="flaticon-map mr15"></span><a href="#">329 Queensberry Street, North Melbourne VIC 3051, Australia.</a></li>
-              <li class="text-white"><span class="flaticon-phone mr15"></span><a href="#">+123 456 7890</a></li>
+              <li class="text-white df"><span class="flaticon-map mr15"></span><a href="#"><b>Head Office:</b> 13B Aina George Street, Off Coker Road Ilupeju, Lagos.</a></li>
+              <div><p class="branchoffice"><b>Branch Office:</b> 13 Awonaike Crescent, Off Tejuosho Road, Surulere, Lagos.</p></div>
+              <li class="text-white"><span class="flaticon-phone mr15"></span><a href="#">08033222132</a></li>
+              <li class="text-white"><span class="flaticon-phone mr15"></span><a href="#">08182006930</a></li>
+              <li class="text-white"><span class="flaticon-phone mr15"></span><a href="#">07046127276</a></li>
               <li class="text-white"><span class="flaticon-mail-inbox-app mr15"></span><a href="#">support@houzing.com</a></li>
             </ul>
           </div>
           <div class="footer_social_widget mt20">
             <ul class="mb0">
-              <li class="list-inline-item"><a href="#"><i class="fa fa-facebook"></i></a></li>
-              <li class="list-inline-item"><a href="#"><i class="fa fa-twitter"></i></a></li>
-              <li class="list-inline-item"><a href="#"><i class="fa fa-instagram"></i></a></li>
-              <li class="list-inline-item"><a href="#"><i class="fa fa-linkedin"></i></a></li>
+              <li class="list-inline-item"><a href="#"><i class="fi fi-brands-facebook"></i></a></li>
+              <li class="list-inline-item"><a href="#"><i class="fi fi-brands-twitter-alt"></i></a></li>
+              <li class="list-inline-item"><a href="#"><i class="fi fi-brands-instagram"></i></a></li>
+              <li class="list-inline-item"><a href="#"><i class="fi fi-brands-whatsapp"></i></a></li>
             </ul>
           </div>
         </div>
-        <div class="col-sm-3 col-md-2 col-lg-2 col-xl-2">
+        <div class="col-sm-5 col-md-4 col-lg-2 col-xl-4">
           <div class="footer_qlink_widget">
             <h4>Discover</h4>
             <ul class="list-unstyled">
-              <li><a href="#">Chicago</a></li>
-              <li><a href="#">Los Angeles</a></li>
-              <li><a href="#">Miami</a></li>
-              <li><a href="#">New York</a></li>
+              <li><a href="#">Finished Projects</a></li>
+              <li><a href="#">Ongoing Projects</a></li>
+              <li><a href="#">Proposed Projects</a></li>
             </ul>
           </div>
         </div>
-        <div class="col-sm-4 col-md-3 col-lg-2 col-xl-2">
-          <div class="footer_qlink_widget pl0">
-            <h4>Lists by Category</h4>
-            <ul class="list-unstyled">
-              <li><a href="#">Apartments</a></li>
-              <li><a href="#">Condos</a></li>
-              <li><a href="#">Houses</a></li>
-              <li><a href="#">Offices</a></li>
-              <li><a href="#">Retail</a></li>
-              <li><a href="#">Villas</a></li>
-            </ul>
-          </div>
-        </div>
-        <div class="col-sm-5 col-md-2 col-lg-2 col-xl-2">
+       
+        <div class="col-sm-5 col-md-2 col-lg-2 col-xl-4">
           <div class="footer_qlink_widget pl0">
             <h4>Quick Links</h4>
             <ul class="list-unstyled">
+              <li><a href="#">Home</a></li>
               <li><a href="#">About Us</a></li>
-              <li><a href="#">Terms & Conditions</a></li>
-              <li><a href="#">User’s Guide</a></li>
-              <li><a href="#">Support Center</a></li>
-              <li><a href="#">Press Info</a></li>
+              <li><a href="#">Company Profile</a></li>
               <li><a href="#">Contact Us</a></li>
             </ul>
-          </div>
-        </div>
-        <div class="col-sm-7 col-md-6 col-lg-3 col-xl-4">
-          <div class="footer_social_widget">
-            <h4>Subscribe</h4>
-            <p class="text-white mb30">We don’t send spam so don’t worry.</p>
-            <form class="footer_mailchimp_form">
-              <div class="form-row align-items-center">
-                <div class="col-auto">
-                  <input type="email" class="form-control" id="inlineFormInput" placeholder="Enter your email">
-                  <button type="submit" class="flaticon-email"></button>
-                </div>
-              </div>
-            </form>
           </div>
         </div>
       </div>
@@ -1220,13 +855,13 @@
       <div class="row">
         <div class="col-md-4 col-lg-4">
           <div class="copyright-widget mt10 mb15-767">
-            <p>Copyright © 2025 AOSprojectmanagemmentltd. All Right Reserved.</p>
+            <p>Copyright © 2025 AOSprojectmanagementltd. All Right Reserved.</p>
           </div>
         </div>
         <div class="col-md-4 col-lg-4">
           <div class="footer_logo_widget text-center mb15-767">
             <div class="wrapper">
-              <div class="logo text-center"> <img src="image/3logo-white.png" class="futer" alt="footer-logo.svg"></div>
+              <div class="logo text-center"> <img src="image/proplogo.png" class="futer" alt="footer-logo.svg"></div>
             </div>
           </div>
         </div>
@@ -1234,9 +869,8 @@
           <div class="footer_menu_widget text-right tac-md mt15">
             <ul>
               <li class="list-inline-item"><a href="#">Home</a></li>
-              <li class="list-inline-item"><a href="#">Site Map</a></li>
-              <li class="list-inline-item"><a href="#">Privacy policy</a></li>
-              <li class="list-inline-item"><a href="#">Cookie Policy</a></li>
+              <li class="list-inline-item"><a href="#">About Us</a></li>
+              <li class="list-inline-item"><a href="#">Contact Us</a></li>
             </ul>
           </div>
         </div>
@@ -1265,6 +899,11 @@
 <script src="js/pricing-slider.js"></script>
 <script src="js/timepicker.js"></script> 
 <script src="js/wow.min.js"></script> 
+<!-- LightGallery JS -->
+<script src="https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/lightgallery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/plugins/thumbnail/lg-thumbnail.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/plugins/zoom/lg-zoom.min.js"></script>
+
 <!-- Custom script for all pages --> 
 <script src="js/script.js"></script>
 </body>
