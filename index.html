@@ -5,9 +5,9 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="keywords" content="advanced search, agency, agent, classified, directory, google maps, house, listing, property, real estate, real estate agency, real estate agent, realestate, realtor, rental">
-<meta name="description" content="AOSprojectmanagementltd">
-<meta name="AOSprojectmanagementltd" content="ATFN">
+<meta name="keywords" content="project management, construction, building, civil engineering, infrastructure development, road construction, housing development, residential projects, commercial construction, urban planning">
+<meta name="description" content="AOS Project Management Ltd — Experts in construction, civil engineering, infrastructure, and development projects delivering quality and precision.">
+
 <!-- css file -->
 <link rel="stylesheet" href="css/bootstrap.min.css">
 <link rel="stylesheet" href="css/style.css">
@@ -16,9 +16,12 @@
 <!-- Title -->
 <title>AOS project management ltd</title>
 <!-- Favicon -->
-<link href="images/favicon.ico" sizes="128x128" rel="shortcut icon" type="image/x-icon" />
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-<link href="images/favicon.ico" sizes="128x128" rel="shortcut icon" />
+<link rel="apple-touch-icon" sizes="180x180" href="image/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="image/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="image/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="192x192" href="image/android-chrome-192x192.png">
+<link rel="icon" type="image/png" sizes="512x512" href="image/android-chrome-512x512.png">
+
 
 <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/uicons-thin-straight/css/uicons-thin-straight.css">
 <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/uicons-thin-rounded/css/uicons-thin-rounded.css">
@@ -29,6 +32,8 @@
 <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/3.0.0/uicons-brands/css/uicons-brands.css'>
 <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/3.0.0/uicons-solid-rounded/css/uicons-solid-rounded.css'>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/css/lightgallery-bundle.min.css"/>
+
+<link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
 
 
 <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -67,13 +72,13 @@
           <li> <a href="page-listing-single-v1.html"><span class="title">Projects</span></a>
             <ul>
               <li>
-                <a href="#">FINISHED</a>
+                <a href="#feature-property">FINISHED</a>
               </li>
               <li>
-                <a href="#">ONGOING</a>
+                <a href="#featuree2">ONGOING</a>
               </li>
               <li> 
-                <a href="#">PROPOSED</a> 
+                <a href="#featuree2">PROPOSED</a> 
               </li>
             </ul>
           </li>
@@ -111,14 +116,19 @@
         <li><a href="index.html">Home</a></li>
         <li><span>Projects</span>
           <ul>
-            <li><a href="page-agent-list.html">Finished</a></li>
-            <li><a href="page-agent-list.html">Ongoing</a></li>
-            <li><a href="page-agent-list.html">Proposed</a></li>
+            <li><a href="#feature-property">Finished</a></li>
+            <li><a href="#featuree2">Ongoing</a></li>
+            <li><a href="#featuree2">Proposed</a></li>
           </ul>
         </li>
         <li><a href="page-about.html">About Us</a></li>
         <li><a href="page-contact.html">Contact</a></li>
-        <li class="cl_btn"><a class="btn btn-block btn-lg btn-thm rounded" href="#"><span class="icon flaticon-button mr5"></span>COMPANY PROFILE</a></li>
+         <li class="mobileme">
+            <a href="image/AOS Company Profile 2025.pdf" download="AOS_Company_Profile_2025.pdf">
+              <span class="fi fi-sr-download"> COMPANY PROFILE</span>
+              <span class="dn-lg"></span>
+            </a>
+          </li>
       </ul>
     </nav>
   </div>
@@ -136,18 +146,20 @@
   </section>
   
   <!-- Home Design -->
-  <section class="home-one home1-overlay bg-home1">
+  <section class="home-one home1-overlay bg-home1 fade-up-onload">
     <div class="container">
       <div class="row posr">
         <div class="col-lg-12">
-          <div class="home_content home1 custom_width">
+          <div class="home_content home1 custom_width fade-up-onload">
             <div class="home-text text-center">
               <p class="fz18 color-white">Built on Precision</p>
-              <h2 class="fz50">Driven by Excellence</h2>
-              <p class="concept-to">From concept to completion — AOS Project Management Limited delivers precision, performance, and trust.<p>
+              <h2 class="fz50">
+                Driven by <span id="changing-word" class="changing-word">Excellence</span>
+              </h2>
+              <p class="concept-to">From concept to completion, AOS Project Management Limited delivers precision, performance, and trust.<p>
             </div>
             <div class="btn-row">
-              <a class="btn btn-prm" href="#">VIEW OUR PROJECTS</a>
+              <a class="btn btn-prm" href="page-listing-single-v1.html">VIEW OUR PROJECTS</a>
               <a class="btn btn-outline" href="page-about.html">LEARN MORE ABOUT US</a>
             </div>  
           </div>
@@ -402,7 +414,7 @@
   
   <!-- How It Works -->
   <section id="why-chose" class="whychose_us bgc-alice-blue pb70">
-    <div class="container">
+    <div class="container" >
       <div class="row">
         <div class="col-lg-6 offset-lg-3">
           <div class="main-title text-center">
@@ -412,7 +424,7 @@
         </div>
       </div>
       <div class="row">
-        <div class="col-md-6 col-xl-3">
+        <div class="col-md-6 col-xl-3" data-aos="fade-right" data-aos-duration="400">
           <div class="why_chose_us">
             <div class="icon"> <span class="flaticon-discord"></span> </div>
             <div class="details">
@@ -421,7 +433,7 @@
             </div>
           </div>
         </div>
-        <div class="col-md-6 col-xl-3">
+        <div class="col-md-6 col-xl-3" data-aos="fade-right" data-aos-duration="400" >
           <div class="why_chose_us">
             <div class="icon"> <span class="flaticon-house"></span> </div>
             <div class="details">
@@ -430,7 +442,7 @@
             </div>
           </div>
         </div>
-        <div class="col-md-6 col-xl-3">
+        <div class="col-md-6 col-xl-3" data-aos="fade-left" data-aos-duration="400">
           <div class="why_chose_us">
             <div class="icon"> <span class="flaticon-calculator"></span> </div>
             <div class="details">
@@ -439,7 +451,7 @@
             </div>
           </div>
         </div>
-        <div class="col-md-6 col-xl-3">
+        <div class="col-md-6 col-xl-3" data-aos="fade-left" data-aos-duration="400">
           <div class="why_chose_us">
             <div class="icon"> <span class="flaticon-maps"></span> </div>
             <div class="details">
@@ -462,7 +474,7 @@
           <div class="business_exposer text-center">
             <p class="fz16 text-uppercase text-white fw500">COMPANY PROFILE</p>
             <h2 class="title text-white mb20">Discover who we are, what we build, and how we deliver excellence across every project.</h2>
-            <a class="btn exposer_btn" href="#">DOWNLOAD PROFILE</a>
+            <a class="btn exposer_btn" href="image/AOS Company Profile 2025.pdf">DOWNLOAD PROFILE</a>
           </div>
         </div>
       </div>
@@ -473,8 +485,8 @@
   <!-- Recent Property For Rent -->
 
 
-<section id="feature-property" class="ongoing-property">
-    <div class="container">
+<section id="feature-property" class="ongoing-property" data-aos="fade-in">
+    <div class="container" id="featuree2">
       <div class="row justify-content-center">
         <div class="col-lg-8">
           <div class="main-title text-center">
@@ -851,7 +863,7 @@
             <h2>Let’s discuss how we can make your next project a success.</h2>
             <p>We’re just a message away from turning your vision into reality.</p>
           </div>
-          <div class="parner_reg_btn text-center mt25"> <a class="btn" href="">GET IN TOUCH</a> </div>
+          <div class="parner_reg_btn text-center mt25"> <a class="btn" href="page-about.html">GET IN TOUCH</a> </div>
         </div>
       </div>
     </div>
@@ -861,7 +873,7 @@
   <section class="footer_one home1">
     <div class="container pb90">
       <div class="row">
-        <div class="col-sm-5 col-md-5 col-lg-6 col-xl-4">
+        <div class="col-sm-5 col-md-5 col-lg-6 col-xl-4" data-aos="fade-right">
           <div class="footer_contact_widget">
             <h4>Contact Us</h4>
             <ul class="list-unstyled">
@@ -870,7 +882,7 @@
               <li class="text-white"><span class="flaticon-phone mr15"></span><a href="#">08033222132</a></li>
               <li class="text-white"><span class="flaticon-phone mr15"></span><a href="#">08182006930</a></li>
               <li class="text-white"><span class="flaticon-phone mr15"></span><a href="#">07046127276</a></li>
-              <li class="text-white"><span class="flaticon-mail-inbox-app mr15"></span><a href="#">support@houzing.com</a></li>
+              <li class="text-white"><span class="flaticon-mail-inbox-app mr15"></span><a href="#">aosprojectsltd@gmail.com</a></li>
             </ul>
           </div>
           <div class="footer_social_widget mt20">
@@ -882,25 +894,25 @@
             </ul>
           </div>
         </div>
-        <div class="col-sm-5 col-md-4 col-lg-2 col-xl-4">
+        <div class="col-sm-5 col-md-4 col-lg-2 col-xl-4" data-aos="fade-right">
           <div class="footer_qlink_widget">
             <h4>Discover</h4>
             <ul class="list-unstyled">
-              <li><a href="#">Finished Projects</a></li>
-              <li><a href="#">Ongoing Projects</a></li>
-              <li><a href="#">Proposed Projects</a></li>
+              <li><a href="#feature-property">Finished</a></li>
+              <li><a href="#featuree2">Ongoing</a></li>
+              <li><a href="#featuree2">Proposed</a></li>
             </ul>
           </div>
         </div>
        
-        <div class="col-sm-5 col-md-2 col-lg-2 col-xl-4">
+        <div class="col-sm-5 col-md-2 col-lg-2 col-xl-4" data-aos="fade-right">
           <div class="footer_qlink_widget pl0">
             <h4>Quick Links</h4>
             <ul class="list-unstyled">
-              <li><a href="#">Home</a></li>
-              <li><a href="#">About Us</a></li>
-              <li><a href="#">Company Profile</a></li>
-              <li><a href="#">Contact Us</a></li>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="page-about.html">About Us</a></li>
+              <li><a href="image/AOS Company Profile 2025.pdf">Company Profile</a></li>
+              <li><a href="page-contact.html">Contact Us</a></li>
             </ul>
           </div>
         </div>
@@ -924,12 +936,16 @@
         <div class="col-md-4 col-lg-4">
           <div class="footer_menu_widget text-right tac-md mt15">
             <ul>
-              <li class="list-inline-item"><a href="#">Home</a></li>
-              <li class="list-inline-item"><a href="#">About Us</a></li>
-              <li class="list-inline-item"><a href="#">Contact Us</a></li>
+              <li class="list-inline-item"><a href="index.html">Home</a></li>
+              <li class="list-inline-item"><a href="page-about.html">About Us</a></li>
+              <li class="list-inline-item"><a href="page-contact.html">Contact Us</a></li>
             </ul>
           </div>
         </div>
+       <a href="https://wa.me/08033222132" target="_blank" class="whatsapp-float" title="Chat with us">
+          <img src="image/whatsapp-icon.png" alt="WhatsApp" />
+          <span class="tooltip-text">Chat with us</span>
+       </a>
       </div>
     </div>
   </section>
@@ -956,6 +972,7 @@
 <script src="js/timepicker.js"></script> 
 <script src="js/wow.min.js"></script> 
 
+
 <!-- LightGallery JS -->
 <script src="https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/lightgallery.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/plugins/thumbnail/lg-thumbnail.min.js"></script>
@@ -963,7 +980,14 @@
 
 <!-- Custom script for all pages --> 
 <script src="js/script.js"></script>
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 1000,  // smooth animation
+    once: false        // animate only once
+  });
+</script>
+
 </body>
 
-<!-- Mirrored from creativelayers.net/themes/houzing-html/ by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 23 Oct 2025 08:45:00 GMT -->
 </html>
