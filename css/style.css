@@ -1423,6 +1423,56 @@ header.header-nav a.navbar_brand {
   right: 90px; /* slide effect */
 }
 
+.click-hint {
+  font-size: 16px;
+  color: #555;
+  margin-top: 5px;
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.7;
+    transform: scale(1.03);
+  }
+}
+
+.click-hint {
+  animation: pulse 2s infinite, fadeOut 1s ease-in-out 5s forwards;
+}
+
+@keyframes fadeOut {
+  to {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+
+.transparent-outline {
+  color: transparent;
+  -webkit-text-stroke: .5px #ffffff; /* white outline */
+  text-transform: inherit;
+  letter-spacing: inherit;
+   font-family: 'Poppins', sans-serif;
+  font-weight: 800;
+}
+
+.changing-word {
+  color: transparent;
+  -webkit-text-stroke: 1px #ffffff;
+  font: inherit; /* keeps your font style */
+}
+
+.changing-word:hover {
+  -webkit-text-stroke: 0;
+  color: white;
+  transition: all 0.4s ease;
+}
 
 
 
