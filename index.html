@@ -35,6 +35,10 @@
 
 <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
 
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@800900&display=swap" rel="stylesheet">
+
+
+
 
 <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -114,7 +118,7 @@
     <nav id="menu" class="stylehome1">
       <ul>
         <li><a href="index.html">Home</a></li>
-        <li><span>Projects</span>
+        <li><a href="page-listing-single-v1.html"><span>Projects</span></a>
           <ul>
             <li><a href="#feature-property">Finished</a></li>
             <li><a href="#featuree2">Ongoing</a></li>
@@ -146,27 +150,30 @@
   </section>
   
   <!-- Home Design -->
-  <section class="home-one home1-overlay bg-home1 fade-up-onload">
-    <div class="container">
-      <div class="row posr">
-        <div class="col-lg-12">
-          <div class="home_content home1 custom_width fade-up-onload">
-            <div class="home-text text-center">
-              <p class="fz18 color-white">Built on Precision</p>
-              <h2 class="fz50">
-                Driven by <span id="changing-word" class="changing-word">Excellence</span>
-              </h2>
-              <p class="concept-to">From concept to completion, AOS Project Management Limited delivers precision, performance, and trust.<p>
-            </div>
-            <div class="btn-row">
-              <a class="btn btn-prm" href="page-listing-single-v1.html">VIEW OUR PROJECTS</a>
-              <a class="btn btn-outline" href="page-about.html">LEARN MORE ABOUT US</a>
-            </div>  
+<section class="home-one home1-overlay bg-home1 fade-up-onload">
+  <div class="container">
+    <div class="row posr">
+      <div class="col-lg-12">
+        <div class="home_content home1 custom_width fade-up-onload">
+          <div class="home-text text-center">
+            <p class="fz18 color-white">Built on Precision</p>
+            <h2 class="fz50 transparent-outline">
+              Driven by <span id="changing-word" class="changing-word">Excellence</span>
+            </h2>
+            <p class="concept-to">
+              From concept to completion, AOS Project Management Limited delivers precision, performance, and trust.
+            </p>
           </div>
+          <div class="btn-row">
+            <a class="btn btn-prm" href="page-listing-single-v1.html">VIEW OUR PROJECTS</a>
+            <a class="btn btn-outline" href="page-about.html">LEARN MORE ABOUT US</a>
+          </div>  
         </div>
       </div>
     </div>
-  </section>
+  </div>
+</section>
+
   
   <!-- Feature Properties -->
   <section id="feature-property" class="feature-property">
@@ -176,6 +183,7 @@
           <div class="main-title text-center">
             <h2>Discover Our Finished Projects</h2>
             <p>A view into our 100% completed projects</p>
+            <p class="section-subtitle click-hint">Click the cards to view more</p>
           </div>
         </div>
       </div>
@@ -200,6 +208,8 @@
                     <a href="image/agodi-5.jpg" data-sub-html="<p>Agodi GRA, Ibadan</p>" style="display:none;"></a>
                     <a href="image/agodi-6.jpg" data-sub-html="<p>Agodi GRA, Ibadan</p>" style="display:none;"></a>
                   </div>
+
+                  
                   <div class="thmb_cntnt">
                     <ul class="tag mb0">
                       <li class="list-inline-item"><a href="#">completion</a></li>
@@ -424,7 +434,7 @@
         </div>
       </div>
       <div class="row">
-        <div class="col-md-6 col-xl-3" data-aos="fade-right" data-aos-duration="400">
+        <div class="col-md-6 col-xl-3" data-aos="fade-up">
           <div class="why_chose_us">
             <div class="icon"> <span class="flaticon-discord"></span> </div>
             <div class="details">
@@ -433,7 +443,7 @@
             </div>
           </div>
         </div>
-        <div class="col-md-6 col-xl-3" data-aos="fade-right" data-aos-duration="400" >
+        <div class="col-md-6 col-xl-3" data-aos="fade-up">
           <div class="why_chose_us">
             <div class="icon"> <span class="flaticon-house"></span> </div>
             <div class="details">
@@ -442,7 +452,7 @@
             </div>
           </div>
         </div>
-        <div class="col-md-6 col-xl-3" data-aos="fade-left" data-aos-duration="400">
+        <div class="col-md-6 col-xl-3" data-aos="fade-down">
           <div class="why_chose_us">
             <div class="icon"> <span class="flaticon-calculator"></span> </div>
             <div class="details">
@@ -451,7 +461,7 @@
             </div>
           </div>
         </div>
-        <div class="col-md-6 col-xl-3" data-aos="fade-left" data-aos-duration="400">
+        <div class="col-md-6 col-xl-3" data-aos="fade-down">
           <div class="why_chose_us">
             <div class="icon"> <span class="flaticon-maps"></span> </div>
             <div class="details">
@@ -485,13 +495,14 @@
   <!-- Recent Property For Rent -->
 
 
-<section id="feature-property" class="ongoing-property" data-aos="fade-in">
+<section id="feature-property" class="ongoing-property">
     <div class="container" id="featuree2">
       <div class="row justify-content-center">
         <div class="col-lg-8">
           <div class="main-title text-center">
             <h2>Ongoing & Proposed Projects</h2>
             <p>A showcase of our current and upcoming projects, reflecting our commitment to quality and design excellence.</p>
+            <p class="section-subtitle click-hint">Click the cards to view more</p>
           </div>
         </div>
       </div>
@@ -690,7 +701,7 @@
       <div class="row">
         <div class="col-lg-6 offset-lg-3">
           <div class="main-title text-center">
-            <h2>Our Testimonials</h2>
+            <h2>Testimonials from our Clients</h2>
             <p>What our clients and partners say about working with us.</p>
           </div>
         </div>
@@ -858,12 +869,12 @@
   <section class="start-partners home1 bgc-thm pt70 pb70">
     <div class="container">
       <div class="row justify-content-center">
-        <div class="col-lg-8">
+        <div class="col-lg-8" data-aos="fade-in">
           <div class="start_partner text-center">
             <h2>Let’s discuss how we can make your next project a success.</h2>
             <p>We’re just a message away from turning your vision into reality.</p>
           </div>
-          <div class="parner_reg_btn text-center mt25"> <a class="btn" href="page-about.html">GET IN TOUCH</a> </div>
+          <div class="parner_reg_btn text-center mt25"> <a class="btn" href="page-contact.html">GET IN TOUCH</a> </div>
         </div>
       </div>
     </div>
@@ -871,9 +882,9 @@
   
   <!-- Our Footer -->
   <section class="footer_one home1">
-    <div class="container pb90">
+    <div class="container pb90" data-aos="fade-right">
       <div class="row">
-        <div class="col-sm-5 col-md-5 col-lg-6 col-xl-4" data-aos="fade-right">
+        <div class="col-sm-5 col-md-5 col-lg-6 col-xl-4">
           <div class="footer_contact_widget">
             <h4>Contact Us</h4>
             <ul class="list-unstyled">
@@ -894,7 +905,7 @@
             </ul>
           </div>
         </div>
-        <div class="col-sm-5 col-md-4 col-lg-2 col-xl-4" data-aos="fade-right">
+        <div class="col-sm-5 col-md-4 col-lg-2 col-xl-4">
           <div class="footer_qlink_widget">
             <h4>Discover</h4>
             <ul class="list-unstyled">
@@ -905,7 +916,7 @@
           </div>
         </div>
        
-        <div class="col-sm-5 col-md-2 col-lg-2 col-xl-4" data-aos="fade-right">
+        <div class="col-sm-5 col-md-2 col-lg-2 col-xl-4">
           <div class="footer_qlink_widget pl0">
             <h4>Quick Links</h4>
             <ul class="list-unstyled">
@@ -929,7 +940,7 @@
         <div class="col-md-4 col-lg-4">
           <div class="footer_logo_widget text-center mb15-767">
             <div class="wrapper">
-              <div class="logo text-center"> <img src="image/proplogo.png" class="futer" alt="footer-logo.svg"></div>
+              <div class="logo text-center"> <a href="index.html"><img src="image/proplogo.png" class="futer" alt="footer-logo.svg"></a></div>
             </div>
           </div>
         </div>
