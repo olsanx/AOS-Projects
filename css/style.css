@@ -1,15 +1,4 @@
-/*******
-Project/Template Name:  Houzing - Real Estate HTML Template
-Template Url:  
-Author: CreativeLayers
-Author Url: https://themeforest.net/user/creativelayers/portfolio
-Version: 1.0
-Description: Houzing - Real Estate HTML Template
-Tag: advanced search, agency, agent, classified, directory, google maps, house, listing, property, real estate, real estate agency, real estate agent, realestate, realtor, rental
 
-
-********/
-/* CSS Document */
 @import url(jquery-ui.min.css);
 @import url(font-awesome.min.css);
 @import url(font-awesome-animation.min.css);
@@ -1441,16 +1430,8 @@ header.header-nav a.navbar_brand {
   }
 }
 
-.click-hint {
-  animation: pulse 2s infinite, fadeOut 1s ease-in-out 5s forwards;
-}
 
-@keyframes fadeOut {
-  to {
-    opacity: 0;
-    visibility: hidden;
-  }
-}
+
 
 
 .transparent-outline {
