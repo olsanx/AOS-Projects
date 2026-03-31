@@ -1919,26 +1919,38 @@ document.addEventListener('DOMContentLoaded', function () {
     };
 
     // Improved Observer
-    const percentageTags = document.querySelectorAll('.tag2 li a, .tag2 li'); // Broader selector
-    const percentageObserver = new IntersectionObserver((entries) => {
+    const percentageTags = document.querySelectorAll('.tag2 li a, .tag2 li');
+
+    const animateIfVisible = (element) => {
+        const rawText = element.textContent.trim();
+        const numericValue = parseInt(rawText.replace(/[^0-9]/g, ''));
+
+        if (!isNaN(numericValue)) {
+            if (rawText.includes('%')) element.dataset.suffix = '%';
+            animateNumber(element, 0, numericValue, 1500);
+        }
+    };
+
+    const percentageObserver = new IntersectionObserver((entries, observer) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
-                const element = entry.target;
-                const rawText = element.textContent.trim();
-                const numericValue = parseInt(rawText.replace(/[^0-9]/g, '')); // Strips % or symbols
-
-                if (!isNaN(numericValue)) {
-                    // Save the suffix (like %) to re-add it during animation
-                    if (rawText.includes('%')) element.dataset.suffix = '%';
-
-                    animateNumber(element, 0, numericValue, 1500);
-                    percentageObserver.unobserve(element); // Stop observing once animated
-                }
+                animateIfVisible(entry.target);
+                observer.unobserve(entry.target);
             }
         });
-    }, { threshold: 0.1 }); // Trigger earlier (10% visibility)
+    }, { threshold: 0.1 });
 
-    percentageTags.forEach(tag => percentageObserver.observe(tag));
+    // Observe all tags
+    percentageTags.forEach(tag => {
+        percentageObserver.observe(tag);
+
+        // Trigger immediately if already visible
+        const rect = tag.getBoundingClientRect();
+        if (rect.top < window.innerHeight && rect.bottom > 0) {
+            animateIfVisible(tag);
+            percentageObserver.unobserve(tag);
+        }
+    });
 
     // Add ripple effect on click for cards
     function createRipple(event, card) {
